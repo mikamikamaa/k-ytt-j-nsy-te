@@ -4,11 +4,18 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         String numberone;
         String numbertwo;
-
+        int numero;
+        numero = 10;
         System.out.println("Anna ensimmäinen numero:");
         numberone = scanner.nextLine();
         System.out.println("Anna toinen numero:");
         numbertwo = scanner.nextLine();
-        System.out.println("Tulos: " + (Integer.parseInt(numberone) + Integer.parseInt(numbertwo)));
+        if (Integer.parseInt(numberone) + Integer.parseInt(numbertwo) > numero) {
+            System.out.println("Summa on suurempi kuin " + numero);
+            System.out.println("Summa on: " + (Integer.parseInt(numberone) + Integer.parseInt(numbertwo)));
+        } else {
+            System.out.println("Summa on pienempi kuin " + numero);
+         System.out.println("Summa on: " + (Integer.parseInt(numberone) + Integer.parseInt(numbertwo)));
+        }
     }
 }

@@ -10,12 +10,12 @@ public class App {
         numberone = scanner.nextLine();
         System.out.println("Anna toinen numero:");
         numbertwo = scanner.nextLine();
-        if (Integer.parseInt(numberone) + Integer.parseInt(numbertwo) > numero) {
-            System.out.println("Summa on suurempi kuin " + numero);
+        System.out.println("Haluatko laskea nämä yhteen vai jakaa?");
+        String kysymys = scanner.nextLine();
+        if (kysymys.equals("yhteen")) {
             System.out.println("Summa on: " + (Integer.parseInt(numberone) + Integer.parseInt(numbertwo)));
-        } else {
-            System.out.println("Summa on pienempi kuin " + numero);
-         System.out.println("Summa on: " + (Integer.parseInt(numberone) + Integer.parseInt(numbertwo)));
+        } else if (kysymys.equals("jakaa")) {
+            System.out.println("Tulos on: " + (Integer.parseInt(numberone) / Integer.parseInt(numbertwo)));
         }
     }
 }
